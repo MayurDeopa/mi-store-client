@@ -1,5 +1,5 @@
 export const login= async(data)=>{
-    const get = await fetch('http://localhost:5000/login',{
+    const get = await fetch('https://mi-store-server.herokuapp.com/login',{
         method :"POST",
         headers:{"Content-Type" :"application/json"},
         body:JSON.stringify(data)
@@ -11,7 +11,7 @@ export const login= async(data)=>{
 
 export const signUp=async(data)=>{
     
-        const res = await fetch("http://localhost:5000/register",{
+        const res = await fetch("https://mi-store-server.herokuapp.com/register",{
             method:'POST',
             headers:{"Content-Type" :"application/json"},
             body:JSON.stringify(data)
