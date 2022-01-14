@@ -1,0 +1,92 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: var(--primary-box-shadow);
+    color: var(--combo-color);
+    z-index: 10 ;
+    background-color: var(--main-color);
+    height: 3.2em;    
+    animation: var(--navbar-load-animation);
+}
+
+
+
+.nav-ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+.burger{
+    font-size:20px;
+    padding: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+.burger{
+    display: none;
+}
+
+.burger-rotate{
+    transform: rotate(360deg);
+    
+}
+
+@keyframes navbar{
+    from{
+        transform: translateY(-5em);
+    }
+
+    to{
+        transform: translateY(0em);
+    }
+}
+
+@media screen and (max-width:500px) {
+    
+    .navbar{
+        justify-content: space-between;
+
+    }
+    .nav-ul{
+        position: fixed;
+        left:-100%;
+        top: 3.2em;
+        width: 60%;
+        height: 100vh;
+        background-color: var(--main-color);
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        border:solid lightblue 1px;
+        padding-top: 2em;
+        
+    }
+
+    .burger{
+        display: flex;
+        z-index: 20;
+    }
+    .trigger-nav-ul{
+        left: 0;
+    }
+    .cart-wrapper,.signin-wrapper,.logo-wrapper{
+        display: block;
+    }
+
+    .profile-drop-down,.empty{
+        display: none;
+    }
+}

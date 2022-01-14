@@ -1,0 +1,11 @@
+.products-display{
+    padding: 10em 1em;
+    background-color: #fafafa;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap :1em;
+    animation: var(--primary-load-animation);
+}

@@ -1,0 +1,9 @@
+
+.logo-wrapper{
+    font-size:20px;
+    padding: 0.1em;
+    gap:0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

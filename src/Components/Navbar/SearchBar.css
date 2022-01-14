@@ -1,0 +1,32 @@
+.searchbar-wrapper{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 4px;
+    padding: 0 0.5em;
+}
+
+.searchbar{
+    border:none;
+    width: 100%;
+    outline: none;
+    padding: 0.3em;
+    background-color: transparent;
+    
+}
+
+.search-btn{
+    outline: none;
+    border:none;
+    padding: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.87em;
+    background-color: transparent;
+    color: var(--main-color);
+    
+}

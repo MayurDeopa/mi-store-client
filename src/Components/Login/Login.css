@@ -1,0 +1,113 @@
+.login-page-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    animation: var(--primary-load-animation);
+}
+
+
+.login-page{
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    gap:1.5em;
+    box-shadow:  rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;;
+    width: min(90%,25em);
+    background-color: white;
+    height: 25em;
+    padding: 0 2em;
+}   
+
+
+
+.login-page-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:5px;
+    width: 100%;
+}
+
+.login-page-header{
+    font-size: 50px;
+    color: var(--main-color);
+}
+
+.login-page-input-wrapper{
+    border:solid 2px transparent;
+    border-bottom: 1px solid #94ADCD;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    color:#94ADCD ;
+}
+
+.login-page-input{
+    height: 3em;
+    width: 100%;
+    padding: 0em 0.5em;
+    border:none;
+    font-size: 1rem;
+    background-color: transparent;
+
+}
+
+.login-page-login-btn{
+    height: 3em;
+    width: 100%;
+    padding: 0.5em;
+    background-color: var(--main-color);
+    color:white;
+    border:none;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.login-page-top-bar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0.5em;
+    width: 100%;
+    background-color: var(--main-color);
+}
+.signin-router-btn{
+    height: 3em;
+    width: 100%;
+    padding: 0.5em;
+    background-color: var(--main-color);
+    color:white;
+    border:none;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.login-page-router{
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.login-page-router:hover{
+    text-decoration: underline;
+}
+
+
+.login-page-login-btn:hover{
+    background-color: var(--button-hover);
+
+}
+.login-page-input:focus{
+    outline: none;
+}
+

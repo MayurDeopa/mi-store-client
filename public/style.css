@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=PT+Sans&display=swap');
+
+:root{
+    --main-color: teal;
+    --combo-color:#fafafa;
+    --button-hover:#008B8B;
+    --primary-box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    --primary-load-animation :load 0.5s ease;
+    --navbar-load-animation :navbar 1s ease;
+    --dominant-loader-animation:loading 1.6s;
+    --spinner-animation:spinning 1s infinite linear;
+    ---product-hover-color:#5ff7d2;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;;
+}
+.main{
+    position: relative;
+}
+
+.display-none{
+    display: none;
+}
+
+
+
+
+
+.icon-anchor{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.platform-wrapper{
+    width: 100%;
+    height: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 1em;
+    background-color: var(--combo-color);  
+
+}
+
+.platform{
+    position: absolute;
+    right: -100%;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #94ADCD;
+
+    
+}
+
+
+.platform-product{
+    width: 20em;
+    height: 100%;
+    padding: 1em;
+
+}
+
+.platform:hover{
+    animation-play-state: paused;
+}
+
+
+
+@keyframes loading{
+    0%{
+        width:0%;
+    }
+
+    50%{
+        width: 50%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+
+
+
+
+@keyframes spinning{
+    100%{
+        transform: rotate(360deg);
+    } 
+}
+
+@keyframes platform{
+    100%{
+        transform: translateX(-200%);
+    } 
+}
+
+@keyframes load{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+ 
+}
+
+
+
+
+
+@keyframes scalable{
+    from{
+        transform: scale(0);
+    }
+    to{
+       transform: scale(1);
+    }
+}
+
+@keyframes view{
+    from {
+        right: -100%;
+    }
+
+    to{
+        right: 0;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:780px) {
+    
+    .cart-item{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+
+@media screen and (max-width:460px) {
+    
+
+
+    .cart-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .cart-buttons{
+        flex-direction: row;
+    }
+    .cart-page-product-image{
+        width: 100%;
+    }
+}

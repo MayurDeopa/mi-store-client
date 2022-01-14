@@ -1,0 +1,27 @@
+
+
+.cart-wrapper{
+    font-size:20px;
+    padding: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+.cart-count{
+    background-color: #e91e63;
+    width:15px;
+    height:15px;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 10px;
+}

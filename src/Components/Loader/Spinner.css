@@ -1,0 +1,22 @@
+.spinner-wrapper{
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: saturate(180%) blur(10px);
+}
+
+
+
+.spinner{
+    width: 4em;
+    height: 4em;
+    border:solid  0.5em black;
+    border-radius: 50%;
+    border-top-color: var(--main-color);
+    animation: var(--spinner-animation);
+}

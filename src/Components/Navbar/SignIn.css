@@ -1,0 +1,19 @@
+.signin-wrapper{
+    font-size:20px;
+    padding: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+    background-color: transparent;
+    border:none;
+    color: white;
+}
+
+.sign-in-text{
+    border-radius: 4px;
+    background-color: var(--main-color);
+    color: white;
+    border:solid 1px white;
+    padding: 0.2em;
+}
