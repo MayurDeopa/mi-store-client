@@ -58,6 +58,7 @@
     
     .navbar{
         justify-content: space-between;
+        padding: 0 2em ;
 
     }
     .nav-ul{
