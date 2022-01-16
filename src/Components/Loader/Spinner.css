@@ -15,8 +15,9 @@
 .spinner{
     width: 4em;
     height: 4em;
-    border:solid  0.5em black;
+    border:solid  0.3rem transparent;
     border-radius: 50%;
     border-top-color: var(--main-color);
+    border-right-color: var(--main-color);
     animation: var(--spinner-animation);
 }

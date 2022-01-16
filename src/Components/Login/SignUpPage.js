@@ -3,6 +3,7 @@ import { Context } from "../App";
 import Spinner from "../Loader/Spinner";
 import { signUp} from "../../services/users";
 import { FaLock,FaEnvelope} from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -10,9 +11,10 @@ import { FaLock,FaEnvelope} from "react-icons/fa";
 const SignUpPage =()=>{
     const {userData}  = useContext(Context)
     const [signInError ,setSigninError] = useState('')
+    const [userCreated, setUserCreated] = useState(false)
     const [isLoading,setIsLoading] = useState(false)
     const [userDetails,setUserDetails] = userData
-    
+    const navigate = useNavigate()
 
     const setEmail=(some)=>{
         setUserDetails({...userDetails,email:some})
@@ -22,11 +24,14 @@ const SignUpPage =()=>{
         setUserDetails({...userDetails,password:some})
     }
     
-    const signIn =()=>{
+    const signIn =async()=>{
         setIsLoading(true)
-        signUp(userDetails)
-        .then(response=>setSigninError(response.message))
-        .then(()=>setIsLoading(false))
+        const res = await signUp(userDetails)
+        console.log(res)
+        setUserCreated(res.signedin)
+        setSigninError(res.message)
+        setIsLoading(false)
+        
     }
     
 

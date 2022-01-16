@@ -1,5 +1,6 @@
 .cart-page-wrapper{
-    height: 100vh;
+    margin-top:3.5em ;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,4 +170,15 @@
 
 .log-in-to-use-cart:hover{
     background-color: var(--button-hover);
+}
+
+@media screen and (max-width:550px) {
+    .cart-container{
+        height: 30rem;
+    }
+    .cart-item{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }

@@ -19,14 +19,18 @@ const LoginPage =()=>{
     const [loginError,setLoginError] = useState("")
     const navigate = useNavigate()
 
-    const userLogin =()=>{
+    const userLogin =async()=>{
         setIsLoading(true)
-        login(userDetails)
-        .then(response=>setLoginError(response.message))
-        .then(()=>setAuthenticated(true))
-        .then(()=>setIsLoading(false))
-        .then(()=>navigate('/'))
-        
+        const res = await login(userDetails)
+        console.log(res)
+        setIsLoading(false)
+        if(res.loggedin){
+            navigate('/')
+            setAuthenticated(true)
+        }
+        else{
+            setLoginError(res.message)
+        }
     }
     
     const setEmail=(some)=>{
