@@ -176,11 +176,16 @@
     .cart-page-wrapper{
         padding: 2rem 0 4rem 0 ;
         margin-top: 0;
-        justify-content: flex-start;
+        align-items: flex-start;
     }
     .cart-container{
         height: auto;
     }
+
+    .log-in-to-use-cart{
+        margin-top: 100%;
+    }
+
     .cart-item{
         display: flex;
         align-items: center;

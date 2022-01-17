@@ -13,7 +13,7 @@ const BottomBar= ()=>{
             <NavLink end to='/' className="icon-anchor"><Logo/></NavLink>
             <NavLink end to='/' className="icon-anchor"><BottomBarSearch/></NavLink>
             <NavLink end to='/CartPage' className="icon-anchor"><CartIcon/></NavLink>
-            <NavLink end to='/LoginPage' className="icon-anchor"><UserIcon/></NavLink>
+            <NavLink end to='/ProfilePage' className="icon-anchor"><UserIcon/></NavLink>
         </nav>
     )
 }

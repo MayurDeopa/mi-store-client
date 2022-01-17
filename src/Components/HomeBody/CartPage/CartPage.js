@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { FaBatteryEmpty, FaCarAlt, FaCaretDown, FaCat, FaLock, FaShoppingBag, FaSnowman, FaTrash } from "react-icons/fa";
+import {FaCat, FaLock} from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { Context } from "../../App";
 import './CartPage.css'

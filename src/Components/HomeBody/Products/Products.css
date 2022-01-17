@@ -1,5 +1,5 @@
 .products-display{
-    padding: 1em;
+    padding: 5rem 1rem;
     background-color: #fafafa;
     width: 100%;
     display: flex;
@@ -8,4 +8,11 @@
     flex-wrap: wrap;
     gap :1em;
     animation: var(--primary-load-animation);
+}
+
+@media  screen and (max-width:500px) {
+    .products-display{
+        padding: 1rem;
+        padding-bottom: 4rem;
+    }
 }
