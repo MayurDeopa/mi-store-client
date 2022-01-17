@@ -5,7 +5,7 @@ import './Logo.css'
 const Logo = ()=>{
     return(
         <div className="logo-wrapper">
-            <FaCat/> mi-Store
+            <FaCat/>
         </div>
     )
 }

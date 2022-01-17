@@ -1,0 +1,28 @@
+.bottom-bar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: var(--primary-box-shadow);
+    color: var(--combo-color);
+    z-index: 10 ;
+    background-color: var(--main-color);
+    height: 3.2em;
+}
+
+.bottom-bar-search{
+    font-size:20px;
+    padding: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width:500px) {
+    .bottom-bar{
+        display: none;
+    }
+}

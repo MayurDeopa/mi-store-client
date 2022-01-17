@@ -1,5 +1,6 @@
 import React from "react";
 import {Route,Routes,Navigate} from 'react-router-dom'
+import BottomBar from "../BottomBar/BottomBar";
 import LoginPage from "../Login/Login";
 import SignUpPage from "../Login/SignUpPage";
 import Navbar from "../Navbar/Navbar";
@@ -16,6 +17,7 @@ const HomePage =()=>{
         
         <div >
             <Navbar/>
+            <BottomBar/>
             <Routes>
                 <Route path='/CartPage' element={<CartPage/>}></Route>
                 <Route path='/Product' element={<ViewProduct/>}></Route>

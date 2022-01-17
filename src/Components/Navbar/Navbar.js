@@ -25,7 +25,7 @@ const Navbar = ()=>{
 
     return(
         <div className ="navbar">  
-            <NavLink className="icon-anchor" end to="/" onClick={navUlState}><Logo/></NavLink>
+            <NavLink className="icon-anchor" end to="/" onClick={navUlState}><Logo/>mi-Store</NavLink>
             <ul className={smallNavState?'nav-ul trigger-nav-ul' :'nav-ul'} onClick={navUlState}>
                 <Searchbar/>
                 <NavLink className="icon-anchor" end to="/CartPage"><CartIcon/></NavLink>
