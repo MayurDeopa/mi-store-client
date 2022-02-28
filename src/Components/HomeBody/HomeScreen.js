@@ -1,5 +1,6 @@
 import React from "react";
 import {Route,Routes,Navigate} from 'react-router-dom'
+import ProtectedRoutes from "../../ProtectedRoutes/ProtectedRoutes";
 import BottomBar from "../BottomBar/BottomBar";
 import LoginPage from "../Login/Login";
 import SignUpPage from "../Login/SignUpPage";
@@ -19,11 +20,13 @@ const HomePage =()=>{
             <Navbar/>
             <BottomBar/>
             <Routes>
-                <Route path='/CartPage' element={<CartPage/>}></Route>
-                <Route path='/Product' element={<ViewProduct/>}></Route>
-                <Route path='/' element={<Products/>}></Route>
-                <Route path='/ProfilePage' element={<ProfilePage/>}></Route>
-                <Route path='/Settings' element ={<Settings/>}></Route>
+                <Route element={<ProtectedRoutes/>}>
+                    <Route path='/CartPage' element={<CartPage/>}></Route>
+                    <Route path='/Product' element={<ViewProduct/>}></Route>
+                    <Route path='/' element={<Products/>}></Route>
+                    <Route path='/ProfilePage' element={<ProfilePage/>}></Route>
+                    <Route path='/Settings' element ={<Settings/>}></Route>
+                </Route>
                 <Route path='/LoginPage' element={<LoginPage/>}></Route>
                 <Route path='/SignUpPage' element={<SignUpPage/>}></Route>
             </Routes>

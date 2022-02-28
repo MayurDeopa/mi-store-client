@@ -8,7 +8,7 @@
     --primary-load-animation :load 0.5s ease;
     --navbar-load-animation :navbar 1s ease;
     --dominant-loader-animation:loading 1.6s;
-    --spinner-animation:spinning 1s infinite linear;
+    --spinner-animation:spinning 0.6s infinite linear;
     ---product-hover-color:#5ff7d2;
 }
 
